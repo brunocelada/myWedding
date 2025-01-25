@@ -29,7 +29,7 @@ header {
     margin-bottom: 10px;
 }
 main {
-    min-height: 600px;
+    min-height: 750px;
 }
 
 button {
@@ -90,6 +90,25 @@ button:hover .default-btn {
 
 button:hover .hover-btn {
   transform: translate(0%, 0%);
+}
+
+.contact {
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+.contact a {
+    background-color: var(--verde-2);
+    color: var(--negro-1);
+    text-decoration: none;
+    font-weight: 200;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px 10px;
+    border-radius: 4px;
+    border: 1px solid var(--negro-1);
+    margin: 15px;
+}
+.contact a:hover {
+    text-decoration: underline;
 }
 
 
