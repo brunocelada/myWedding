@@ -1,35 +1,40 @@
 :root {
-    --verde-1: #757A72;
-    --verde-2: #9DA697;
-    --blanco-1: #F2F2F2;
-    --gris-1: #262626;
-    --negro-1: #0D0D0D;
+  --verde-1: #757a72;
+  --verde-2: #9da697;
+  --blanco-1: #f2f2f2;
+  --gris-1: #262626;
+  --negro-1: #0d0d0d;
 }
 
 /* Estilos globales */
 body {
+  max-width: 500px;
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
   justify-content: center;
   align-items: center;
+  justify-self: center;
   background-color: var(--blanco-1);
   color: var(--negro-1);
   text-align: center;
+  background-image: url("/images/fondo-wedding-big.png");
 }
 
 header {
-    background-color: var(--verde-2);
-    color: var(--gris-1);
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 1.1rem;
-    margin: 0;
-    padding: 1px;
-    text-align: center;
-    margin-bottom: 10px;
+  background-color: var(--verde-2);
+  color: var(--gris-1);
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 1rem;
+  margin: 0;
+  padding: 1px;
+  text-align: center;
+  margin-bottom: 10px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
 }
 main {
-    min-height: 750px;
+  min-height: 750px;
 }
 
 button {
@@ -62,7 +67,6 @@ button {
   font-weight: 500;
   text-transform: uppercase;
   transition: all 0.3s ease;
-  
 }
 
 .hover-btn {
@@ -73,7 +77,7 @@ button {
   transform: translate(0%, 100%);
 }
 .hover-btn span img {
-    width: 60px;
+  width: 60px;
 }
 
 .default-btn span {
@@ -93,30 +97,57 @@ button:hover .hover-btn {
 }
 
 .contact {
-    margin-top: 50px;
-    margin-bottom: 10px;
+  margin-top: 50px;
+  margin-bottom: 10px;
 }
 .contact a {
-    background-color: var(--verde-2);
-    color: var(--negro-1);
-    text-decoration: none;
-    font-weight: 200;
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 5px 10px;
-    border-radius: 4px;
-    border: 1px solid var(--negro-1);
-    margin: 15px;
+  background-color: var(--verde-2);
+  color: var(--negro-1);
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 1px solid rgb(228, 228, 228);
+  margin: 15px;
 }
 .contact a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
+}
+
+footer {
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--gris-1);
+  background-color: var(--verde-2);
+  margin: 0;
+  margin-top: 1rem;
+  padding: 1px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
 }
 
 
-footer {
-    font-family: Arial, Helvetica, sans-serif;
-    color: var(--gris-1);
-    background-color: var(--verde-2);
-    margin: 0;
-    margin-top: 1rem;
-    padding: 1px;
+.info {
+  margin: 0 15px;
+  justify-self: center;
+  width: 75%;
+  color: var(--negro-1);
+  border: 1px solid var(--verde-1);
+  border-radius: 15px;
+  margin-bottom: 1rem;
+  padding: 0 10px;
+  text-align: left;
+}
+.info h2 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: var(--gris-1);
+}
+.info span {
+  font-weight: bold;
+}
+#cordoba {
+  font-style: italic;
+}
+.info a {
+  font-style: italic;
+  color: var(--gris-1);
 }
