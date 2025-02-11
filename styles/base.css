@@ -23,7 +23,7 @@ body {
   /* background-color: var(--blanco-1); */
   color: var(--negro-1);
   text-align: center;
-  background-image: url("../images/fondo-wedding-big.png");
+  background-image: url("../images/fondo-2.png");
 }
 
 header {
@@ -118,6 +118,12 @@ button:hover .hover-btn {
 }
 .contact a:hover {
   text-decoration: underline;
+}
+
+#first-img {
+  max-width: 400px;
+  border-radius: 10px;
+  margin: 25px;
 }
 
 footer {
@@ -246,4 +252,7 @@ iframe {
 #transferencias section {
   padding: 0 50px;
   text-align: left;
+}
+hr {
+  border: 1px solid var(--verde-1);
 }

@@ -1,0 +1,24 @@
+@media screen and (min-width: 740px) {
+    body {
+        max-width: 1200px;
+        font-size: larger;
+      }
+    #templo-section, #fotos-section, #regalos-section {
+      margin: 0 80px;
+    }
+    section img {
+      max-width: 650px;
+    }
+    #first-img {
+      max-width: 650px;
+    }
+    iframe {
+      width: 720px;
+      height: 510px;
+    }
+    #meme {
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 100px 600px;
+      grid-gap: 10px;
+    }
+}
