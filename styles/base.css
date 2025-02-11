@@ -1,17 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Raleway&family=Roboto&display=swap');
+
 :root {
   --verde-1: #757a72;
   --verde-2: #9da697;
+  --verde-3:rgba(171, 180, 165, 0.479);
   --blanco-1: #f2f2f2;
   --gris-1: #262626;
   --negro-1: #0d0d0d;
+
+  --fuente-lora: "Lora", "Noto Serif", "serif";
 }
 
 /* Estilos globales */
 body {
-  max-width: 500px;
-  font-family: Arial, sans-serif;
+  max-width: 520px;
+  font-family: var(--fuente-lora);
   margin: 0;
-  padding: 0;
+  padding: 0 10px;
   justify-content: center;
   align-items: center;
   justify-self: center;
@@ -24,7 +29,8 @@ body {
 header {
   background-color: var(--verde-2);
   color: var(--gris-1);
-  font-family: Georgia, "Times New Roman", Times, serif;
+  /* font-family: Georgia, "Times New Roman", Times, serif; */
+  font-family: var(--fuente-lora);
   font-size: 1rem;
   margin: 0;
   padding: 1px;
@@ -104,7 +110,7 @@ button:hover .hover-btn {
   background-color: var(--verde-2);
   color: var(--negro-1);
   text-decoration: none;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--fuente-lora);
   padding: 5px 10px;
   border-radius: 5px;
   border: 1px solid rgb(228, 228, 228);
@@ -115,7 +121,7 @@ button:hover .hover-btn {
 }
 
 footer {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--fuente-lora);
   color: var(--gris-1);
   background-color: var(--verde-2);
   margin: 0;
@@ -150,4 +156,94 @@ footer {
 .info a {
   font-style: italic;
   color: var(--gris-1);
+}
+
+nav {
+  padding: 0.5rem 0; 
+  justify-content: space-evenly;
+  display: flex;
+}
+nav a {
+  padding: 10px;
+  font-weight: bold;
+  margin: 0;
+  border: 1px solid var(--gris-1);
+  border-radius: 5px;
+  text-decoration: none;
+  color: var(--negro-1);
+  background-color: var(--verde-3);
+}
+nav a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+
+/* TEMPLO */
+#templo-section, #fotos-section, #regalos-section {
+  text-align: left;
+  margin: 0;
+  justify-content: center;
+  justify-items: center;
+}
+.italica {
+  font-style: italic;
+}
+#templo-info {
+  text-align: center;
+}
+section img {
+  max-width: 350px;
+  border-radius: 10px;
+}
+iframe {
+  border-radius: 10px;
+}
+#direc-templo {
+  color: var(--negro-1);
+}
+
+/* FOTOS */
+#fotos-section {
+  justify-items: center;
+}
+#album-link {
+  align-items: center;
+  display: flex;
+}
+#album-link a {
+  color: var(--negro-1);
+  padding-left: 10px;
+}
+#album-img {
+  width: 80px;
+  text-decoration: none;
+  border-radius: 10px;
+}
+
+/* REGALOS */
+#meme {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 15px;
+  justify-items: center;
+  align-items: center;
+}
+#meme-img {
+  width: 150px;
+  grid-column: 1;
+  grid-row: 1;
+}
+#meme p{
+  grid-row: 1;
+  grid-column: 2/4;
+}
+#meme iframe {
+  grid-row: 2;
+  grid-column: span 3;
+}
+#transferencias section {
+  padding: 0 50px;
+  text-align: left;
 }
