@@ -22,3 +22,14 @@
       grid-gap: 10px;
     }
 }
+
+/* pequeñito */
+@media screen and (max-width: 340px) {
+  .contact {
+    display: flex;
+    flex-direction: column;
+  }
+  .contact a {
+    margin: 10px;
+  }
+}
