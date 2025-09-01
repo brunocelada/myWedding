@@ -190,6 +190,9 @@ nav a:hover {
   justify-content: center;
   justify-items: center;
 }
+#fotos-section{
+  text-align: center;
+}
 .italica {
   font-style: italic;
 }
